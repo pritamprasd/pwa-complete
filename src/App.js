@@ -2,6 +2,7 @@ import "./App.css";
 import { useLiveQuery } from "dexie-react-hooks";
 import { db } from "./db";
 import { useState } from "react";
+import Login from "./login";
 
 
 function App() {
@@ -17,9 +18,10 @@ function App() {
   };
   return (
     <div className="App">
-      <h1>Sample PWA App</h1>
+      {/* <h1>Sample PWA App</h1>
       <button onClick={onButonClick}>Add random data</button>
-      <OldFriendsList/>
+      <OldFriendsList/> */}
+      <Login/>
     </div>
   );
 }
