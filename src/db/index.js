@@ -2,9 +2,10 @@ import Dexie from "dexie";
 
 class FriendsDB extends Dexie {
     constructor() {
-        super("friendsDB");
-        this.version(2).stores({
-            friends: `++id, age`
+        super("friends_db");
+        this.version(1).stores({
+            friends: "++id, name, age, *tags",
+            gameSessions: "id, score"
         });
     }
 }

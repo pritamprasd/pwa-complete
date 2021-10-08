@@ -8,7 +8,6 @@ function App() {
   const [name, setname] = useState("MISTER 0")
 
   const onButonClick = () => {
-    console.log("button clicked")
     setname("MISTER 1")
     const friend= {
         name: name,
