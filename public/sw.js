@@ -43,7 +43,7 @@ workbox.routing.registerRoute(
       new workbox.cacheableResponse.CacheableResponsePlugin({
         statuses: [200],
       }),
-      new ExpirationPlugin({
+      new workbox.expiration.ExpirationPlugin({
         maxEntries: 50,
         maxAgeSeconds: 60 * 60 * 24 * 30, // 30 Days
       }),

@@ -1,3 +1,9 @@
+### TODO:
+- dexie cloud sync
+- create a backend with fatsapi
+- 
+
+
 ## workbox:
 ```sh
 npm install workbox-cli --global
